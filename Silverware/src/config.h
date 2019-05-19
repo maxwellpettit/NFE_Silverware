@@ -43,9 +43,9 @@
 #endif
 
 #ifdef BETAFLIGHT_RATES
-#define BF_RC_RATE_ROLL 0.80
-#define BF_RC_RATE_PITCH 0.80
-#define BF_RC_RATE_YAW 0.80
+#define BF_RC_RATE_ROLL 1.00
+#define BF_RC_RATE_PITCH 1.00
+#define BF_RC_RATE_YAW 1.00
 #define BF_SUPER_RATE_ROLL 0.70
 #define BF_SUPER_RATE_PITCH 0.70
 #define BF_SUPER_RATE_YAW 0.70
@@ -101,15 +101,15 @@
 //*************be active.  With LEVELMODE active - MCU will apply RACEMODE if racemode channel is on, HORIZON if horizon 
 //*************channel is on, or racemodeHORIZON if both channels are on - and will be standard LEVELMODE if neither 
 //*************racemode or horizon are switched on.
-#define ARMING CHAN_5
-#define IDLE_UP CHAN_5
-#define IDLE_THR 0.05f                   //This designates an idle throttle of 5%
-#define LEVELMODE CHAN_6
-#define RACEMODE  CHAN_7
-#define HORIZON   CHAN_8
-#define PIDPROFILE CHAN_9                //For switching stickAccelerator & stickTransition profiles on pid.c page
-#define RATES CHAN_ON
-#define LEDS_ON CHAN_10
+#define ARMING CHAN_10
+#define IDLE_UP CHAN_10
+#define IDLE_THR 0.01f                   //This designates an idle throttle of 5%
+#define LEVELMODE CHAN_5
+#define RACEMODE  CHAN_OFF
+#define HORIZON   CHAN_OFF
+#define PIDPROFILE CHAN_OFF               //For switching stickAccelerator & stickTransition profiles on pid.c page
+#define RATES CHAN_OFF
+#define LEDS_ON CHAN_OFF
 
 // *************switch for fpv / other, requires fet
 // *************comment out to disable

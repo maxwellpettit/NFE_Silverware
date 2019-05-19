@@ -12,7 +12,9 @@ REM * Created by Phobos
 echo Building SilverWare...
 
 SET OBJDIR=.\silverware\objects
-SET KEILDIR=C:\Users\Maxwell\Applications\keil\ARM\ARMCC\bin
+REM * SET KEILDIR=C:\Users\Maxwell\Applications\keil\ARM\ARMCC\bin
+SET KEILDIR=D:\Applications\Keil_v5\ARM\ARMCC\bin
+
 
 SET SRC=.\silverware\src .\Utilities .\Libraries\STM32F0xx_StdPeriph_Driver\src
 SET INC=-I .\silverware\src -I .\Libraries\CMSIS\Device\ST\STM32F0xx\Include -I .\Libraries\CMSIS\Include -I .\Utilities -I .\Libraries\STM32F0xx_StdPeriph_Driver\inc
