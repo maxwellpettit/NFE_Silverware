@@ -84,8 +84,8 @@
 
 // *************Transmitter Type Selection
 //#define USE_STOCK_TX
-//#define USE_DEVO
-#define USE_MULTI
+#define USE_DEVO
+//#define USE_MULTI
 
 // *******************************SWITCH SELECTION*****************************
 // *************CHAN_ON - on always ( all protocols)
@@ -101,10 +101,10 @@
 //*************be active.  With LEVELMODE active - MCU will apply RACEMODE if racemode channel is on, HORIZON if horizon 
 //*************channel is on, or racemodeHORIZON if both channels are on - and will be standard LEVELMODE if neither 
 //*************racemode or horizon are switched on.
-#define ARMING CHAN_10
-#define IDLE_UP CHAN_10
+#define ARMING CHAN_5
+#define IDLE_UP CHAN_5
 #define IDLE_THR 0.01f                   //This designates an idle throttle of 5%
-#define LEVELMODE CHAN_5
+#define LEVELMODE CHAN_6
 #define RACEMODE  CHAN_OFF
 #define HORIZON   CHAN_OFF
 #define PIDPROFILE CHAN_OFF               //For switching stickAccelerator & stickTransition profiles on pid.c page
