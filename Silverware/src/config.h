@@ -43,8 +43,8 @@
 #endif
 
 #ifdef BETAFLIGHT_RATES
-#define BF_RC_RATE_ROLL 1.00
-#define BF_RC_RATE_PITCH 1.00
+#define BF_RC_RATE_ROLL 1.25
+#define BF_RC_RATE_PITCH 1.25
 #define BF_RC_RATE_YAW 1.50
 #define BF_SUPER_RATE_ROLL 0.70
 #define BF_SUPER_RATE_PITCH 0.70
