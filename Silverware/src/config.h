@@ -28,29 +28,29 @@
 #ifdef SILVERWARE_RATES
 // *************rate in deg/sec
 // *************for acro mode
-#define MAX_RATE 860.0          //Roll & Pitch axis
-#define MAX_RATEYAW 500.0       //Yaw axis (used in acro and leveling modes)
+#define MAX_RATE 800.0          //Roll & Pitch axis
+#define MAX_RATEYAW 800.0       //Yaw axis (used in acro and leveling modes)
 
 // *************EXPO from 0.00 to 1.00 , 0 = no exp
 // *************positive = less sensitive near center 
 #define ACRO_EXPO_ROLL 0.80
 #define ACRO_EXPO_PITCH 0.80
-#define ACRO_EXPO_YAW 0.60
+#define ACRO_EXPO_YAW 0.0
 
-#define ANGLE_EXPO_ROLL 0.55
+#define ANGLE_EXPO_ROLL 0.0
 #define ANGLE_EXPO_PITCH 0.0
-#define ANGLE_EXPO_YAW 0.55
+#define ANGLE_EXPO_YAW 0.0
 #endif
 
 #ifdef BETAFLIGHT_RATES
-#define BF_RC_RATE_ROLL 1.25
-#define BF_RC_RATE_PITCH 1.25
+#define BF_RC_RATE_ROLL 1.50
+#define BF_RC_RATE_PITCH 1.50
 #define BF_RC_RATE_YAW 1.50
 #define BF_SUPER_RATE_ROLL 0.70
 #define BF_SUPER_RATE_PITCH 0.70
 #define BF_SUPER_RATE_YAW 0.60
-#define BF_EXPO_ROLL 0.00
-#define BF_EXPO_PITCH 0.00
+#define BF_EXPO_ROLL 0.50
+#define BF_EXPO_PITCH 0.50
 #define BF_EXPO_YAW 0.00
 #endif
 
@@ -102,8 +102,8 @@
 //*************channel is on, or racemodeHORIZON if both channels are on - and will be standard LEVELMODE if neither 
 //*************racemode or horizon are switched on.
 #define ARMING CHAN_5
-#define IDLE_UP CHAN_5
-#define IDLE_THR 0.01f                   //This designates an idle throttle of 5%
+#define IDLE_UP CHAN_ON
+#define IDLE_THR 0.05f                   //This designates an idle throttle of 5%
 #define LEVELMODE CHAN_6
 #define RACEMODE  CHAN_OFF
 #define HORIZON   CHAN_OFF
