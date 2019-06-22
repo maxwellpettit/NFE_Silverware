@@ -43,14 +43,14 @@
 #endif
 
 #ifdef BETAFLIGHT_RATES
-#define BF_RC_RATE_ROLL 1.50
-#define BF_RC_RATE_PITCH 1.50
-#define BF_RC_RATE_YAW 1.50
-#define BF_SUPER_RATE_ROLL 0.72
-#define BF_SUPER_RATE_PITCH 0.72
-#define BF_SUPER_RATE_YAW 0.60
-#define BF_EXPO_ROLL 0.50
-#define BF_EXPO_PITCH 0.50
+#define BF_RC_RATE_ROLL 0.80
+#define BF_RC_RATE_PITCH 0.80
+#define BF_RC_RATE_YAW 0.80
+#define BF_SUPER_RATE_ROLL 0.80
+#define BF_SUPER_RATE_PITCH 0.80
+#define BF_SUPER_RATE_YAW 0.70
+#define BF_EXPO_ROLL 0.05
+#define BF_EXPO_PITCH 0.05
 #define BF_EXPO_YAW 0.00
 #endif
 
@@ -108,7 +108,7 @@
 #define RACEMODE  CHAN_OFF
 #define HORIZON   CHAN_OFF
 #define PIDPROFILE CHAN_OFF               //For switching stickAccelerator & stickTransition profiles on pid.c page
-#define RATES CHAN_OFF
+#define RATES CHAN_ON
 #define LEDS_ON CHAN_OFF
 
 // *************switch for fpv / other, requires fet
