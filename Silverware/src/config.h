@@ -43,14 +43,14 @@
 #endif
 
 #ifdef BETAFLIGHT_RATES
-#define BF_RC_RATE_ROLL 0.80
-#define BF_RC_RATE_PITCH 0.80
-#define BF_RC_RATE_YAW 0.80
-#define BF_SUPER_RATE_ROLL 0.80
-#define BF_SUPER_RATE_PITCH 0.80
+#define BF_RC_RATE_ROLL 1.00
+#define BF_RC_RATE_PITCH 1.00
+#define BF_RC_RATE_YAW 1.00
+#define BF_SUPER_RATE_ROLL 0.70
+#define BF_SUPER_RATE_PITCH 0.70
 #define BF_SUPER_RATE_YAW 0.70
-#define BF_EXPO_ROLL 0.05
-#define BF_EXPO_PITCH 0.05
+#define BF_EXPO_ROLL 0.00
+#define BF_EXPO_PITCH 0.00
 #define BF_EXPO_YAW 0.00
 #endif
 
@@ -254,8 +254,8 @@
 //#define TORQUE_BOOST 1.0
 
 // *************makes throttle feel more poppy - can intensify small throttle imbalances visible in FPV if factor is set too high
-//#define THROTTLE_TRANSIENT_COMPENSATION 
-//#define THROTTLE_TRANSIENT_COMPENSATION_FACTOR 4.0 
+#define THROTTLE_TRANSIENT_COMPENSATION 
+#define THROTTLE_TRANSIENT_COMPENSATION_FACTOR 4.0 
  
 // *************throttle angle compensation in level mode
 //#define AUTO_THROTTLE
